@@ -772,7 +772,7 @@ export class SDK {
    * Limit is hardcode in -1 because is necessary get all settings rows.
    */
   public getSettings(params: QueryParamsType = {}) {
-    params.limit=-1;
+    params.limit = -1;
     return this.api.get<ISettingsResponse>("/settings", params);
   }
 
